@@ -545,6 +545,8 @@ Drupal.navbar = {
       $trays.filter('.navbar-tray-vertical.navbar-active').attr('data-offset-' + edge, '');
       // If an active horizontal tray exists, mark it as an offset element.
       $trays.filter('.navbar-tray-horizontal.navbar-active').attr('data-offset-top', '');
+      // Remove .open from li in horizontal mode
+      $trays.find('li.navbar-active-trail').toggleClass('open', !(orientation === 'horizontal'));
     },
 
     /**
