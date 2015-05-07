@@ -78,7 +78,7 @@
 .no-svg .navbar-bar .navbar-icon-help.navbar-active:before {
   background-image: url("../icons/ffffff/questionmark-disc.png");
 }
-#navbar-administration .navbar-bar .navbar-icon.element-hidden {
+.navbar-bar .navbar-icon.element-hidden {
   display: none;
 }
 
@@ -247,7 +247,30 @@
 .no-svg .navbar-icon-help.navbar-active:before {
   background-image: url("../icons/000000/questionmark-disc.png");
 }
-
+.np-svg #navbar-administration .navbar-menu .navbar-icon.navbar-handle::before {
+  background-image: url("../icons/787878/push-right.png");
+  background-size: 75%;
+}
+#navbar-administration .navbar-tray-horizontal .navbar-menu .navbar-icon.navbar-handle::before {
+  background-image: url("../icons/787878/push-right.svg");
+  background-size: 75%;
+}
+.np-svg #navbar-administration .navbar-tray-horizontal .navbar-menu .navbar-menu .navbar-icon.navbar-handle.open:before {
+  background-image: url("../icons/5181c6/push-right.png");
+  background-size: 75%;
+}
+#navbar-administration .navbar-tray-horizontal .navbar-menu .navbar-menu .navbar-icon.navbar-handle.open:before {
+  background-image: url("../icons/5181c6/push-right.svg");
+  background-size: 75%;
+}
+#navbar-administration .navbar-menu .navbar-level-1 > .navbar-box .navbar-icon.navbar-handle::before {
+  background-image: url("../icons/787878/chevron-disc-down.svg");
+  background-size: 75%;
+}
+#navbar-administration .navbar-menu .navbar-level-1 > .navbar-box .navbar-icon.navbar-handle.open::before {
+  background-image: url("../icons/5181c6/chevron-disc-down.svg");
+  background-size: 75%;
+}
 @media only screen and (min-width: 16.5em) {
   #navbar-administration .navbar-bar .navbar-icon {
     margin-left: 0;
@@ -331,30 +354,26 @@
   left: 1.6667em; /* LTR */
 }
 #navbar-administration .navbar-icon.navbar-handle:before {
-  background-image: url("../icons/5181c6/chevron-disc-down.svg");
+  background-image: url("../icons/787878/chevron-disc-down.svg");
 }
 .no-svg #navbar-administration .navbar-icon.navbar-handle:before {
-  background-image: url("../icons/5181c6/chevron-disc-down.png");
+  background-image: url("../icons/787878/chevron-disc-down.png");
 }
 #navbar-administration .navbar-icon.navbar-handle.open:before {
-  background-image: url("../icons/787878/chevron-disc-up.svg");
+  background-image: url("../icons/5181c6/chevron-disc-up.svg");
 }
 .no-svg #navbar-administration .navbar-icon.navbar-handle.open:before {
-  background-image: url("../icons/787878/chevron-disc-up.png");
-}
-#navbar-administration .navbar-menu .navbar-menu .navbar-icon.navbar-handle:before {
-  background-image: url("../icons/5181c6/twistie-down.svg");
-  background-size: 75%;
+  background-image: url("../icons/5181c6/chevron-disc-up.png");
 }
 .no-svg #navbar-administration .navbar-menu .navbar-menu .navbar-icon.navbar-handle:before {
   background-image: url("../icons/5181c6/twistie-down.png");
   background-size: auto auto;
 }
-#navbar-administration .navbar-menu .navbar-menu .navbar-icon.navbar-handle.open:before {
+#navbar-administration .navbar-menu .navbar-menu > .nav-box .navbar-icon.navbar-handle.open:before {
   background-image: url("../icons/787878/twistie-up.svg");
   background-size: 75%;
 }
-.no-svg #navbar-administration .navbar-menu .navbar-menu .navbar-icon.navbar-handle.open:before {
+.no-svg #navbar-administration .navbar-menu .navbar-menu > .nav-box .navbar-icon.navbar-handle.open:before {
   background-image: url("../icons/787878/twistie-up.png");
   background-size: auto auto;
 }
@@ -405,5 +424,12 @@
 }
 .no-svg #navbar-administration .navbar-toggle-orientation [value="horizontal"]:hover:before {
   background-image: url("../icons/787878/push-up.png");
+}
+
+/**
+ * Horizontal dock override
+ */
+#navbar-administration .navbar-tray-horizontal .navbar-icon.navbar-handle:focus {
+  background: none!important;
 }
 
